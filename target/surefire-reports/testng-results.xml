@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-24T10:52:24 IST" name="Suite" finished-at="2025-12-24T10:52:45 IST" duration-ms="21628">
+    <groups>
+    </groups>
+    <test started-at="2025-12-24T10:52:24 IST" name="FlipkartHomePageTest" finished-at="2025-12-24T10:52:32 IST" duration-ms="8177">
+      <class name="tests.HomePageTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:tests.HomePageTest@5b1ebf56]" started-at="2025-12-24T10:52:24 IST" name="setUp" finished-at="2025-12-24T10:52:30 IST" duration-ms="6500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@539c4830]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFashionSubMenu()[pri:0, instance:tests.HomePageTest@5b1ebf56]" started-at="2025-12-24T10:52:30 IST" name="testFashionSubMenu" finished-at="2025-12-24T10:52:31 IST" duration-ms="1268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFashionSubMenu -->
+        <test-method signature="testLogo()[pri:0, instance:tests.HomePageTest@5b1ebf56]" started-at="2025-12-24T10:52:31 IST" name="testLogo" finished-at="2025-12-24T10:52:32 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogo -->
+        <test-method signature="testSearchField()[pri:0, instance:tests.HomePageTest@5b1ebf56]" started-at="2025-12-24T10:52:32 IST" name="testSearchField" finished-at="2025-12-24T10:52:32 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@5b1ebf56]" started-at="2025-12-24T10:52:32 IST" name="tearDown" finished-at="2025-12-24T10:52:32 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.HomePageTest -->
+    </test> <!-- FlipkartHomePageTest -->
+    <test started-at="2025-12-24T10:52:32 IST" name="FlipkartNotificationPageTest" finished-at="2025-12-24T10:52:38 IST" duration-ms="6410">
+      <class name="tests.NotificationPageTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:tests.NotificationPageTest@17aad511]" started-at="2025-12-24T10:52:32 IST" name="setUp" finished-at="2025-12-24T10:52:35 IST" duration-ms="3541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6f1fa1d0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPageTitle()[pri:0, instance:tests.NotificationPageTest@17aad511]" started-at="2025-12-24T10:52:35 IST" name="testPageTitle" finished-at="2025-12-24T10:52:38 IST" duration-ms="2741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NotificationPageTest@17aad511]" started-at="2025-12-24T10:52:38 IST" name="tearDown" finished-at="2025-12-24T10:52:38 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.NotificationPageTest -->
+    </test> <!-- FlipkartNotificationPageTest -->
+    <test started-at="2025-12-24T10:52:38 IST" name="CustomerCarePageTest" finished-at="2025-12-24T10:52:45 IST" duration-ms="7005">
+      <class name="tests.customerCarePageTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:tests.customerCarePageTest@63798ca7]" started-at="2025-12-24T10:52:38 IST" name="setUp" finished-at="2025-12-24T10:52:42 IST" duration-ms="4088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@28b523a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="customerCarePageTitleTest()[pri:0, instance:tests.customerCarePageTest@63798ca7]" started-at="2025-12-24T10:52:42 IST" name="customerCarePageTitleTest" finished-at="2025-12-24T10:52:45 IST" duration-ms="2722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerCarePageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.customerCarePageTest@63798ca7]" started-at="2025-12-24T10:52:45 IST" name="tearDown" finished-at="2025-12-24T10:52:45 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.customerCarePageTest -->
+    </test> <!-- CustomerCarePageTest -->
+  </suite> <!-- Suite -->
+</testng-results>

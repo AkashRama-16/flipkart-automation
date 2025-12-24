@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listeners.SuiteListener"/>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="FlipkartHomePageTest(failed)">
+    <classes>
+      <class name="tests.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testFashionSubMenu"/>
+        </methods>
+      </class> <!-- tests.HomePageTest -->
+    </classes>
+  </test> <!-- FlipkartHomePageTest(failed) -->
+  <test thread-count="5" name="FlipkartNotificationPageTest(failed)">
+    <classes>
+      <class name="tests.NotificationPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testPageTitle"/>
+        </methods>
+      </class> <!-- tests.NotificationPageTest -->
+    </classes>
+  </test> <!-- FlipkartNotificationPageTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

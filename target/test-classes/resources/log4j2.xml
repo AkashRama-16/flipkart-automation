@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<!-- 🎨 Console Appender (color + clean alignment) -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="| %highlight{%d{HH:mm:ss.SSS}}{FATAL=red blink, ERROR=red, WARN=yellow, INFO=green, DEBUG=cyan} | %-20t | %-5p | %-25c{1} | %msg%n" />
+		</Console>
+
+		<!-- 📂 File Appender (for detailed HTML-like tabular format) -->
+		<File name="FileLogger" fileName="logs/AutomationLog.log"
+			append="false">
+			<PatternLayout>
+				<Pattern>
+                    <![CDATA[| %d{yyyy-MM-dd HH:mm:ss} | %-20t | %-5p | %-25c{1} | %msg%n]]>
+				</Pattern>
+			</PatternLayout>
+		</File>
+	</Appenders>
+
+	<Loggers>
+		<!-- 🧱 Suppress 3rd party noise -->
+		<Logger name="io.github.bonigarcia" level="warn" />
+		<Logger name="org.openqa.selenium" level="warn" />
+		<Logger name="org.testng" level="info" />
+
+		<!-- ✅ Your project -->
+		<Root level="info">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="FileLogger" />
+		</Root>
+	</Loggers>
+</Configuration>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<listeners>
+		<listener class-name="listeners.SuiteListener" />
+		<listener class-name="listeners.TestListener" />
+	</listeners>
+	<test name="FlipkartHomePageTest">
+		<classes>
+			<class name="tests.HomePageTest">
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="FlipkartNotificationPageTest">
+		<classes>
+			<class name="tests.NotificationPageTest" />
+		</classes>
+	</test>
+	<test name="CustomerCarePageTest">
+		<classes>
+			<class name="tests.customerCarePageTest" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

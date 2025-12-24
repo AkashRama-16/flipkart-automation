@@ -1,0 +1,32 @@
+| 2025-12-24 10:52:23 | main                 | INFO  | SuiteListener             | >>> Starting Suite: Suite
+| 2025-12-24 10:52:24 | main                 | INFO  | TestListener              | === Starting test group: FlipkartHomePageTest ===
+| 2025-12-24 10:52:27 | main                 | INFO  | Base                      | Browser initiated
+| 2025-12-24 10:52:30 | main                 | INFO  | Base                      | Navigated to Flipkart URL
+| 2025-12-24 10:52:30 | main                 | INFO  | TestListener              | >>> Starting test: testFashionSubMenu
+| 2025-12-24 10:52:31 | main                 | INFO  | HomePageTest              | Valid Sub Menu Items are displayed in Fashion dropdown
+| 2025-12-24 10:52:31 | main                 | INFO  | TestListener              | ✔ Passed: testFashionSubMenu
+| 2025-12-24 10:52:31 | main                 | INFO  | TestListener              | >>> Starting test: testLogo
+| 2025-12-24 10:52:32 | main                 | INFO  | HomePageTest              | Flipkart Logo is Displayed
+| 2025-12-24 10:52:32 | main                 | INFO  | TestListener              | ✔ Passed: testLogo
+| 2025-12-24 10:52:32 | main                 | INFO  | TestListener              | >>> Starting test: testSearchField
+| 2025-12-24 10:52:32 | main                 | INFO  | HomePageTest              | Valid data is displayed in search field
+| 2025-12-24 10:52:32 | main                 | INFO  | TestListener              | ✔ Passed: testSearchField
+| 2025-12-24 10:52:32 | main                 | INFO  | Base                      | Browser closed
+| 2025-12-24 10:52:32 | main                 | INFO  | TestListener              | === Finished test group: FlipkartHomePageTest ===
+| 2025-12-24 10:52:32 | main                 | INFO  | TestListener              | === Starting test group: FlipkartNotificationPageTest ===
+| 2025-12-24 10:52:33 | main                 | INFO  | Base                      | Browser initiated
+| 2025-12-24 10:52:35 | main                 | INFO  | Base                      | Navigated to Flipkart URL
+| 2025-12-24 10:52:35 | main                 | INFO  | TestListener              | >>> Starting test: testPageTitle
+| 2025-12-24 10:52:38 | main                 | INFO  | NotificationPageTest      | Notification page title is displayed
+| 2025-12-24 10:52:38 | main                 | INFO  | TestListener              | ✔ Passed: testPageTitle
+| 2025-12-24 10:52:38 | main                 | INFO  | Base                      | Browser closed
+| 2025-12-24 10:52:38 | main                 | INFO  | TestListener              | === Finished test group: FlipkartNotificationPageTest ===
+| 2025-12-24 10:52:38 | main                 | INFO  | TestListener              | === Starting test group: CustomerCarePageTest ===
+| 2025-12-24 10:52:39 | main                 | INFO  | Base                      | Browser initiated
+| 2025-12-24 10:52:42 | main                 | INFO  | Base                      | Navigated to Flipkart URL
+| 2025-12-24 10:52:42 | main                 | INFO  | TestListener              | >>> Starting test: customerCarePageTitleTest
+| 2025-12-24 10:52:45 | main                 | INFO  | NotificationPageTest      | Customer care page title is displayed
+| 2025-12-24 10:52:45 | main                 | INFO  | TestListener              | ✔ Passed: customerCarePageTitleTest
+| 2025-12-24 10:52:45 | main                 | INFO  | Base                      | Browser closed
+| 2025-12-24 10:52:45 | main                 | INFO  | TestListener              | === Finished test group: CustomerCarePageTest ===
+| 2025-12-24 10:52:45 | main                 | INFO  | SuiteListener             | <<< Finishing Suite: Suite

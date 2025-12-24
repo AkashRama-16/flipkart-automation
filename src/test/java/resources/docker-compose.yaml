@@ -1,0 +1,58 @@
+version: '2'
+services:
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "16686:16686"
+      - "4317:4317"
+  chrome:
+    image: selenium/node-chrome:4.38.0-20251101
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_ENABLE_TRACING=true
+      - SE_OTEL_TRACES_EXPORTER=otlp
+      - SE_OTEL_EXPORTER_ENDPOINT=http://jaeger:4317
+    ports:
+      - "6900:5900"
+
+  edge:
+    image: selenium/node-edge:4.38.0-20251101
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_ENABLE_TRACING=true
+      - SE_OTEL_TRACES_EXPORTER=otlp
+      - SE_OTEL_EXPORTER_ENDPOINT=http://jaeger:4317
+    ports:
+      - "6901:5900"
+
+  firefox:
+    image: selenium/node-firefox:4.38.0-20251101
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_ENABLE_TRACING=true
+      - SE_OTEL_TRACES_EXPORTER=otlp
+      - SE_OTEL_EXPORTER_ENDPOINT=http://jaeger:4317
+    ports:
+      - "6902:5900"
+
+  selenium-hub:
+    image: selenium/hub:4.38.0-20251101
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+    depends_on:
+      - jaeger
+    environment:
+      - SE_ENABLE_TRACING=true
+      - SE_OTEL_TRACES_EXPORTER=otlp
+      - SE_OTEL_EXPORTER_ENDPOINT=http://jaeger:4317
